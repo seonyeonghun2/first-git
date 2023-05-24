@@ -32,3 +32,16 @@
         width: 300px;          /* 넓이 : 가로폭 */
         height: 200px;         /* 높이 */
     } 
+    /* 아이디 선택자 : 스타일링 */
+    #btn01 {
+        background-color: green; /* 배경-색*/
+        color: white;           /* 글자색 */
+        border: 0;                  /* 테두리 : 없음 */
+        padding: 10px 20px;         /* 안 여백: 상하10, 좌우20 */
+    }
+    #btn02 {
+        background-color: orange; /* 배경-색*/
+        color: white;           /* 글자색 */
+        border: 0;                  /* 테두리 : 없음 */
+        padding: 10px 20px;         /* 안 여백: 상하10, 좌우20 */
+    }
