@@ -33,15 +33,45 @@
         height: 200px;         /* 높이 */
     } 
     /* 아이디 선택자 : 스타일링 */
-    #btn01 {
-        background-color: green; /* 배경-색*/
+    /* 버튼 6개의 공통 스타일 */
+    button {
+        background-color: gray; /* 배경-색*/
         color: white;           /* 글자색 */
+        padding: 10px 20px;      /* 안 여백: 상하10, 좌우20 */
+    }
+    #btn01 {
+        background-color: green;
         border: 0;                  /* 테두리 : 없음 */
-        padding: 10px 20px;         /* 안 여백: 상하10, 좌우20 */
+            
     }
     #btn02 {
         background-color: orange; /* 배경-색*/
         color: white;           /* 글자색 */
         border: 0;                  /* 테두리 : 없음 */
         padding: 10px 20px;         /* 안 여백: 상하10, 좌우20 */
+    }
+
+    /* modal 클래스 스타일 */
+    .modal {
+        width: 600px;   /* 가로 넓이 */
+        height: 400px;  /* 세로 높이 */
+        position: absolute;  /* 포지션: 절대위치 */
+        top: 50%;   /* 윗쪽 기준: (반대쪽으로) 화면의 1/2 만큼 이동 */
+        left: 50%;  /* 왼쪽 기준 : (반대쪽으로) 화면의 1/2 만큼 이동 */
+        transform: translate(-50%, -50%);   /* 변형: 위치이동(가로중간, 세로중간) */
+        background-color: white;    /* 배경색: 흰색 */
+    }
+    .photo {
+        width: 100%;
+        border: 0;
+        text-align: center;  /* 텍스트-정렬: 가로 가운데 */
+        box-sizing: border-box;
+    }
+
+    #close_modal {
+        position: absolute;
+        left: 50%;
+        bottom: 10%;                 /* 아래위치 기준: 반대쪽으로 10% 위치 이동 */
+        transform: translateX(-50%); /* 변형: 위치이동(수평 반대쪽) */
+
     }

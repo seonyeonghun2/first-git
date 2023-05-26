@@ -19,3 +19,24 @@ document.querySelector("#btn02").addEventListener("click", () => {
     location.href="https://www.knps.or.kr/front/portal/visit/visitCourseSubMain.do?parkId=120100&menuNo=7020100"
 });
 
+
+// 모달 창 닫기 버튼 스크립트
+// 1. 닫기 버튼 선택
+// 1.1 닫기 버튼 변수
+let closeBTN = document.querySelector("#close_modal");
+let modalBOX = document.querySelector(".modal");
+
+
+// modal 창의 마지막 상태값을 저장하는 변수를 생성하고 그 값을 기록해 두었다가,
+// 브라우저가 index.html 보여줄때 그 변수를 검사하고 닫은 상태라면,
+// 더이상 modal 창을 보여주지 않게 프로그래밍 ==> 지금은 생략 (문법이 더 필요해요!)
+
+//console.log(closeBTN); // 확인후 주석처리 합시다.
+// 2. 이 버튼에 click을 감지하는 이벤트리스너 등록
+closeBTN.addEventListener("click", () => { // click하면 {..}사이 실행해~!
+    // 3. click이 되면, 처리할 일 등록 : 현재 모달 ==> 숨김 처리
+    // console.log(modalBOX.style); // modalBOX의 style 보여줘
+    // 3.1 값을 변수에 저장 하는 문법 ==> 변수명(또는 속성명) = 새 값;
+    modalBOX.style.display = "none";
+});
+
