@@ -53,8 +53,8 @@
 
     /* modal 클래스 스타일 */
     .modal {
-        width: 600px;   /* 가로 넓이 */
-        height: 400px;  /* 세로 높이 */
+        width: 83.33333333333333%;   /* 가로 넓이 */
+        min-height: 400px;  /* 세로 높이 */
         position: absolute;  /* 포지션: 절대위치 */
         top: 50%;   /* 윗쪽 기준: (반대쪽으로) 화면의 1/2 만큼 이동 */
         left: 50%;  /* 왼쪽 기준 : (반대쪽으로) 화면의 1/2 만큼 이동 */
@@ -66,6 +66,10 @@
         border: 0;
         text-align: center;  /* 텍스트-정렬: 가로 가운데 */
         box-sizing: border-box;
+    }
+    .photo img { /* .photo 후손인 img 요소를 스타일링 하겠다 */
+        width: 80%;
+        height: auto; /* 높이 : 자동 (넓이에 비례해서..) */
     }
 
     #close_modal {
